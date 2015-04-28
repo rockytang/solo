@@ -3,25 +3,38 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-
+    <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
   </head>
   <body>
     <div ng-controller="appCtrl">
       <h1>Yelp Dice Roll</h1>
-      <input type="text" ng-model="foodType" placeholder="What you wanna eat? Cheap chinese food? Steakhouse?">
-      <input type="text" ng-model="location" placeholder="Where are you now? Address?">
-      <input type="text" ng-model="distance" placeholder="How far you wanna walk? (meters)">
-      <input type="text" ng-model="number" placeholder="Enter a random number 1 - 20">
-      <button ng-click="diceRoll()">Dice Roll!</button>
-        <div>
-          {{ dataName }}
-          {{ dataRating }}
-          {{ dataUrl }}
-          {{ dataSnippetText }}
-          {{ dataImageUrl }}
+
+      <div class="inputs">
+        <input type="text" ng-model="foodType" placeholder="What you wanna eat?">
+        <input type="text" ng-model="location" placeholder="Where you at?">
+        <input type="text" ng-model="distance" placeholder="Miles you can walk?">
+        <input type="text" ng-model="number" placeholder="Pick a number 1-20">
+        <button ng-click="diceRoll()">Dice Roll!</button>
+        <img class="dice" ng-src="dice.gif">
       </div>
+
+      <div class="results">
+        <h2> {{ dataName }} </h2>
+        <h3> {{ dataRating }} stars</h3>
+        <a href="{{ dataUrl }}" target="_blank">Go to Yelp's URL</a>
+        <p>What are people saying?</p>
+        <p> {{ dataSnippetText }} </p>
+        <img ng-src="{{ dataImageUrl }}" alt="Restaurant Image">
+      </div>
+
     </div>
   </body>
 </html>

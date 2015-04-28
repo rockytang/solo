@@ -1,0 +1,55 @@
+body {
+    background-image: url("berry.jpg");
+    background-size: 100%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 18pt;
+}
+
+input {
+  height:180px;
+  width:180px;
+  font-size:12pt;
+}
+
+.inputs {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.dice {
+  height:180px;
+  width:180px;
+}
+
+button {
+  height:180px;
+  width:180px;
+  font-size:12pt;
+}
+
+.results {
+  background: rgb(0, 0 ,0);
+  background: rgba(0, 0, 0, .5);
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-size:14pt;
+  font-weight: 900;
+}
+a {
+  color: tomato;
+}
+
+
+/*clip|ellipsis|string|initial|inherit*/

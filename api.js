@@ -11,10 +11,8 @@ var search = function(req, res){
 
   function(error, data){
     if(error) {console.log(error)};
-    console.log('name: ', data.businesses);
-    // console.log('rating: ', data.businesses[0].rating);
-    // console.log('url: ', data.businesses[0].url);
-    var randomNum = Math.floor(Math.random() * req.body.limit)
+    // console.log('name: ', data.businesses[0].name);
+    var randomNum = Math.floor(Math.random() * data.businesses.length)
 
     var sendData = {
       'name': data.businesses[randomNum].name,
