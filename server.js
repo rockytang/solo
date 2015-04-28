@@ -2,18 +2,19 @@ var express = require('express');
 var app = express();
 // middleware morgan
 var morgan = require('morgan');
+// body parser middleware that parses json req
+var bodyParser = require('body-parser');
 
 var api = require('./api.js')
 
 app.use(express.static(__dirname + '/public'));
 app.use(morgan('dev'));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-app.get('/get', function(req,res){
-  console.log('this is req',req.query.term)
-  api.search();
-  // res.sendfile('./public/index.html');
-  // res.render('index')
-  res.send("hello world")
+app.post('/post', function(req,res){
+  console.log('this is req.body: ', req.body)
+  api.search(req, res);
 });
 
 

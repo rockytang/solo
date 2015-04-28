@@ -9,10 +9,19 @@
   </head>
   <body>
     <div ng-controller="appCtrl">
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <h1>Hello, {{ yourName.name }}!</h1>
+      <h1>Yelp Dice Roll</h1>
+      <input type="text" ng-model="foodType" placeholder="What you wanna eat? Cheap chinese food? Steakhouse?">
+      <input type="text" ng-model="location" placeholder="Where are you now? Address?">
+      <input type="text" ng-model="distance" placeholder="How far you wanna walk? (meters)">
+      <input type="text" ng-model="number" placeholder="Enter a random number 1 - 20">
       <button ng-click="diceRoll()">Dice Roll!</button>
-      {{ data }}
+        <div>
+          {{ dataName }}
+          {{ dataRating }}
+          {{ dataUrl }}
+          {{ dataSnippetText }}
+          {{ dataImageUrl }}
+      </div>
     </div>
   </body>
 </html>
