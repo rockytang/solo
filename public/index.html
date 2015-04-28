@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app = "myApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div ng-controller="appCtrl">
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <h1>Hello, {{ yourName.name }}!</h1>
+      <button ng-click="diceRoll()">Dice Roll!</button>
+      {{ data }}
+    </div>
+  </body>
+</html>

@@ -1,6 +1,5 @@
 var yelp = require("./api_key.js")
 
-
 var search = function(){
   yelp.search({
       term: "chinese",
@@ -12,9 +11,11 @@ var search = function(){
 
   function(error, data){
     if(error) {console.log(error)};
-    console.log('name: ', data.businesses);
+    console.log('name: ', data.businesses[0].name);
     console.log('rating: ', data.businesses[0].rating);
     console.log('url: ', data.businesses[0].url);
+
+    
   })
 }
 

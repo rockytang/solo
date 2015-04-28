@@ -1,20 +1,21 @@
 var express = require('express');
 var app = express();
-
-var api = require('./api.js')
 // middleware morgan
 var morgan = require('morgan');
 
-app.set('view engine', 'ejs');
+var api = require('./api.js')
 
-app.get('/', function(req,res){
+app.use(express.static(__dirname + '/public'));
+app.use(morgan('dev'));
+
+app.get('/get', function(req,res){
   console.log('this is req',req.query.term)
   api.search();
-  res.send('This is rocky\'s end point');
+  // res.sendfile('./public/index.html');
   // res.render('index')
+  res.send("hello world")
 });
 
-app.use(morgan('dev'));
 
 var server = app.listen(1337, function(){
   var host = server.address().address;

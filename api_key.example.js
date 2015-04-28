@@ -7,3 +7,4 @@ var yelp = require("yelp").createClient({
 
 module.exports = yelp;
 
+// enter keys and delete '.example' from the file name
