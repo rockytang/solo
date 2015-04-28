@@ -22,15 +22,15 @@ Once the project moves into development, the press release can be used as a touc
 
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-  Yelp for the undecisive.
+  Yelp for the indecisive.
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
-  Select your filters on yelp and only get back one option. That way, you never have to decide!
+  Select your filters on yelp and randomly get back one option. That way, you never have to decide!
 
 ## Problem ##
   > Describe the problem your product solves.
-  Even with yelp's fantastic filtering options. Sometimes, 10 options is just too much. For some, they need only one option.
+  Even with yelp's fantastic filtering options. Sometimes 10 options is just too much. For some, they need only one option.
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
@@ -46,10 +46,10 @@ Once the project moves into development, the press release can be used as a touc
 
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
-  "Before this app, I would spend half my lunch time deciding where to go. Now I just go to the one restaurant it recommends!"
+  "Before this app, I would spend half my lunch time deciding where to go. Now I just go to the restaurant it recommends!"
 
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
-  Go check out my index.html page and select your next lunch spot!
+  Go check out my page and select your next lunch spot!
 
 
